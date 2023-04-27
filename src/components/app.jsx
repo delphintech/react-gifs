@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Search from './search-bar';
 import Gif from './gif';
+import Giflist from './gif-list';
 
 
 class App extends Component {
@@ -24,9 +25,12 @@ class App extends Component {
       <div>
         <div className="left-scene">
           <Search />
-          <Gif />
+          <div className="selected-gif">
+            <Gif id="KZeKpFsTB3uGntA3f5" />
+          </div>
         </div>
         <div className="right-scene">
+          <Giflist />
         </div>
       </div>
     );
