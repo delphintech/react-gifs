@@ -1,23 +1,20 @@
 import React, { Component } from 'react';
+import Gif from './gif';
 
 class Giflist extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      query: ""
-    };
+    this.source = `https://media0.giphy.com/media/${props.id}/giphy/200w.webp`;
   }
 
-  handleChange = (event) => {
-    this.setState({
-      query: event.target.value
-    });
-  }
-
-  // render example
   render () {
+    const { gifs } = this.props;
     return (
-      <input className="form-control form-search" onChange={this.handleChange} />
+      <div className="gif-list">
+        {gifs.map((gif) => {
+          return <Gif id={gif} key={gif} />;
+        })}
+      </div>
     );
   }
 }
