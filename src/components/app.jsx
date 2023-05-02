@@ -18,7 +18,8 @@ class App extends Component {
   searchFunction = (query) => {
     giphy("VMcVxgJtUXFpSGEB1h67ilEuwYcNDUi3").search({
       q: query,
-      rating: 'g'
+      rating: 'g',
+      limit: 10
     }, (err, res) => {
       // Res contains gif data!
       this.setState({
@@ -28,9 +29,16 @@ class App extends Component {
     });
   }
 
+  selectFunction = (id) => {
+    this.setState({
+      // Change state at event (ex: clicked: !this.state.clicked)
+      selectedGif: id
+    });
+  }
+
   // render example
   render () {
-    const { selectedGif } = this.state;
+    const { selectedGif, gifs } = this.state;
     return (
       <div>
         <div className="left-scene">
@@ -40,7 +48,7 @@ class App extends Component {
           </div>
         </div>
         <div className="right-scene">
-          <Giflist gifs={this.state.gifs} />
+          <Giflist gifs={gifs} selectFunction={this.selectFunction} />
         </div>
       </div>
     );
