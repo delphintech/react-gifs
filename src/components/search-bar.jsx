@@ -6,12 +6,15 @@ class Search extends Component {
     this.state = {
       query: ""
     };
+    this.searchFunction = props.searchFunction;
   }
 
   handleChange = (event) => {
+    const { query } = this.state;
     this.setState({
       query: event.target.value
     });
+    this.searchFunction(query);
   }
 
   // render example

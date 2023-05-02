@@ -1020,6 +1020,11 @@
   resolved "https://registry.yarnpkg.com/@nicolo-ribaudo/chokidar-2/-/chokidar-2-2.1.8-no-fsevents.3.tgz#323d72dd25103d0c4fbdce89dadf574a787b1f9b"
   integrity sha512-s88O1aVtXftvp5bCPB7WnmXc5IwOZZ7YPuwNPt+GtOOXpPvad1LfbmjYv+qII7zP6RU2QGnqve27dnLycEnyEQ==
 
+"@types/giphy-api@^2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@types/giphy-api/-/giphy-api-2.0.3.tgz#cdb689040bb61fbb8d3de094238cec16ca8c4e86"
+  integrity sha512-nqwYMwWwa6uwnj4RbiexCj9yPTQS8etUD5LyA4T7GwqyX5WDowJ+8c5J5N4QHJOvHXF1wzt/fQ0UIAkDJtg+ig==
+
 "@types/glob@^7.1.1":
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/@types/glob/-/glob-7.2.0.tgz#bc1b5bf3aa92f25bd5dd39f35c57361bdce5b2eb"
@@ -3884,6 +3889,11 @@ gh-pages@^2.0.1:
     filenamify-url "^1.0.0"
     fs-extra "^8.1.0"
     globby "^6.1.0"
+
+giphy-api@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/giphy-api/-/giphy-api-2.0.2.tgz#458b8733f50818b602c7e582a75a3b3a8d7680cb"
+  integrity sha512-vZaLQhgMF0mDQSNpqooe4Zqoe2dWGqVYhh7Ar6I41BRtcZtfupr9avT23IIPScKBYfb3qAfiKQRQyKgLi8Lcxw==
 
 glob-parent@^3.1.0:
   version "3.1.0"
