@@ -7,15 +7,11 @@ class Giflist extends Component {
     this.gifs = props.gifs;
   }
 
-  handleClick = (event) => {
-    console.log(event.target);
-  }
-
   render () {
     return (
       <div className="gif-list">
-        {this.gifs.map((gif) => {
-          return <Gif id={gif.id} key={gif.id} onClick={this.handleClick} />;
+        {this.props.gifs.map((gif) => {
+          return <Gif id={gif.id} key={gif.id} selectFunction={this.props.selectFunction} />;
         })}
       </div>
     );
